@@ -8,9 +8,10 @@ in {
 	system.activationScripts.gtk = ''
 		mkdir -p ${home}/.config/gtk-3.0
 		cat > ${home}/.config/gtk-3.0/settings.ini << EOF
-[Settings]
-gtk-theme-name=Adwaita-dark
+[Setting0000s]
+gtk-theme-name=Adwaita-dark TROLL
 gtk-application-prefer-dark-theme=1
+OK.
 EOF
 		chown ${username}:${group} ${home}/.config/gtk-3.0/settings.ini
 		chmod 644 ${home}/.config/gtk-3.0/settings.ini

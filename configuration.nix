@@ -12,7 +12,7 @@ in {
 gtk-theme-name=Adwaita-dark
 gtk-application-prefer-dark-theme=1
 EOF
-		chown ${user}:${group} ${home}/.config/gtk-3.0/settings.ini
+		chown ${username}:${group} ${home}/.config/gtk-3.0/settings.ini
 		chmod 644 ${home}/.config/gtk-3.0/settings.ini
 	'';
 	

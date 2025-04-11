@@ -21,6 +21,8 @@ in {
 	'';
 	
 	environment.systemPackages = with pkgs; [
+		glib
+		gsettings-desktop-schemas
 		gnome-themes-extra
 		gnome.adwaita-icon-theme
 		lxappearance

@@ -21,6 +21,7 @@ in {
 	'';
 	
 	environment.systemPackages = with pkgs; [
+		gnome-themes-extra
 		lxappearance
 		xdg-desktop-portal-gtk
 	];

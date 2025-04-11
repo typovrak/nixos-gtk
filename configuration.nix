@@ -22,6 +22,7 @@ in {
 	
 	environment.systemPackages = with pkgs; [
 		gnome-themes-extra
+		gnome.adwaita-icon-theme
 		lxappearance
 		xdg-desktop-portal-gtk
 	];

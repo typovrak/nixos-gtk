@@ -24,7 +24,7 @@ in {
 		glib
 		gsettings-desktop-schemas
 		gnome-themes-extra
-		gnome.adwaita-icon-theme
+		adwaita-icon-theme
 		lxappearance
 		xdg-desktop-portal-gtk
 	];

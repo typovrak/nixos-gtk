@@ -18,6 +18,8 @@ in {
 		cp ${./settings.ini} ${home}/.config/gtk-3.0/settings.ini
 		chown ${username}:${group} ${home}/.config/gtk-3.0/settings.ini
 		chmod 600 ${home}/.config/gtk-3.0/settings.ini
+
+		${pkgs.gsettings}/bin/gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 	'';
 	
 	environment.systemPackages = with pkgs; [

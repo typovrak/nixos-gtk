@@ -18,12 +18,17 @@ in {
 		cp ${./settings.ini} ${home}/.config/gtk-3.0/settings.ini
 		chown ${username}:${group} ${home}/.config/gtk-3.0/settings.ini
 		chmod 600 ${home}/.config/gtk-3.0/settings.ini
+
+		cp ${./settings.ini} ${home}/.gtkrc-2.0.mine
+		chown ${username}:${group} ${home}/.gtkrc-2.0.mine
+		chmod 600 ${home}/.gtkrc-2.0.mine
 	'';
 	
 	environment.systemPackages = with pkgs; [
 		gnome-themes-extra
 		lxappearance
 		xdg-desktop-portal-gtk
+		papirus-icon-theme
 	];
 
 	 xdg.portal = {

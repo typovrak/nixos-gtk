@@ -39,6 +39,9 @@ in {
 		xdg-desktop-portal-gtk
 		papirus-icon-theme
 		catppuccin-cursors.mochaGreen
+		(magnetic-catppuccin-gtk.override {
+			accent = [ "green" ];
+		})
 	];
 
 	 xdg.portal = {

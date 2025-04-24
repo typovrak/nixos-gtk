@@ -22,6 +22,15 @@ in {
 		cp ${./settings.ini} ${home}/.gtkrc-2.0.mine
 		chown ${username}:${group} ${home}/.gtkrc-2.0.mine
 		chmod 600 ${home}/.gtkrc-2.0.mine
+
+		rm -rf ${home}/.config/gtk-4.0
+		mkdir ${home}/.config/gtk-4.0
+		chown ${username}:${group} ${home}/.config/gtk-4.0
+		chmod 700 ${home}/.config/gtk-4.0
+
+		cp ${./settings.ini} ${home}/.config/gtk-4.0/settings.ini
+		chown ${username}:${group} ${home}/.config/gtk-4.0/settings.ini
+		chmod 600 ${home}/.config/gtk-4.0/settings.ini
 	'';
 	
 	environment.systemPackages = with pkgs; [
